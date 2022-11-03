@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(DIF)-> CAR GAME</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="game">
+        <div id="bluecar"><img src="./image/carR.png" alt=""></div>
+    </div>
+    <script>
+        var blueCar = document.getElementById("bluecar");
+    
+//move
+blueCar.addEventListener("animationiteration",function(){
+    var random = ((Math.floor(Math.random() * 3)) * 130)
+    blueCar.style.left = random + "px"
+    counter++
+})
+    </script>
+</body>
+</html>
